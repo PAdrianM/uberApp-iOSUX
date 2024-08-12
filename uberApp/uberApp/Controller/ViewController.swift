@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func logInButton(_ sender: UIButton) {
+    }
+    @IBAction func registerButton(_ sender: UIButton) {
+    }
+    
 }
 
