@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA412AD32C6ACB1100465D97 /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA412AD22C6ACB1100465D97 /* registerController.swift */; };
+		CA95683E2C6AC57A00B664E0 /* forgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */; };
+		CA9568402C6AC5D900B664E0 /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95683F2C6AC5D900B664E0 /* logInController.swift */; };
 		CAA0C2F72C65BD2C00188707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C2F62C65BD2C00188707 /* AppDelegate.swift */; };
 		CAA0C2F92C65BD2C00188707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C2F82C65BD2C00188707 /* SceneDelegate.swift */; };
 		CAA0C2FB2C65BD2C00188707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C2FA2C65BD2C00188707 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA412AD22C6ACB1100465D97 /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
+		CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgotPasswordController.swift; sourceTree = "<group>"; };
+		CA95683F2C6AC5D900B664E0 /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
 		CAA0C2F32C65BD2C00188707 /* uberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA0C2F62C65BD2C00188707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAA0C2F82C65BD2C00188707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				CAA0C2FA2C65BD2C00188707 /* ViewController.swift */,
+				CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */,
+				CA95683F2C6AC5D900B664E0 /* logInController.swift */,
+				CA412AD22C6ACB1100465D97 /* registerController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,8 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA0C2FB2C65BD2C00188707 /* ViewController.swift in Sources */,
+				CA95683E2C6AC57A00B664E0 /* forgotPasswordController.swift in Sources */,
 				CAA0C2F72C65BD2C00188707 /* AppDelegate.swift in Sources */,
 				CAA0C2F92C65BD2C00188707 /* SceneDelegate.swift in Sources */,
+				CA412AD32C6ACB1100465D97 /* registerController.swift in Sources */,
+				CA9568402C6AC5D900B664E0 /* logInController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
