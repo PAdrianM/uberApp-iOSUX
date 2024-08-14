@@ -11,6 +11,8 @@ class forgotPasswordController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Forgot Password"
 
         // Do any additional setup after loading the view.
     }
