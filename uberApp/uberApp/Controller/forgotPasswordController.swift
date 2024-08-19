@@ -8,24 +8,40 @@
 import UIKit
 
 class forgotPasswordController: UIViewController {
-
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var emailTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Forgot Password"
+        emailTextField.text = ""
+        
+        // Configurar el botón de retroceso sin texto
+                let backButton = UIBarButtonItem()
+                backButton.title = ""
+                navigationItem.backBarButtonItem = backButton
 
         // Do any additional setup after loading the view.
+        // Configurar la acción del botón de "Sign Up"
+                signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    @objc func signUpButtonTapped() {
+           // Limpiar la pila de navegación y dirigir al usuario a la pantalla principal
+           if let navigationController = navigationController {
+               for controller in navigationController.viewControllers {
+                   if controller is ViewController {
+                       navigationController.popToViewController(controller, animated: true)
+                       return
+                   }
+               }
+           }
+           
+           // Si no se encuentra la pantalla principal, realizar push a registerController
+           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           if let registerVC = storyboard.instantiateViewController(withIdentifier: "registerController") as? registerController {
+               navigationController?.pushViewController(registerVC, animated: true)
+           }
+       }
 
 }
