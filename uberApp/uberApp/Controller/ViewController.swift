@@ -15,5 +15,17 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func enterButton(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        
+        guard let dashboardVC = storyboard.instantiateViewController(withIdentifier: "dashboardViewController") as? dashboardViewController else{
+            return
+        }
+        
+        dashboardVC.modalPresentationStyle = .fullScreen
+        dashboardVC.modalTransitionStyle = .crossDissolve
+        
+        self.present(dashboardVC, animated: true, completion: nil)
+    }
 }
 
