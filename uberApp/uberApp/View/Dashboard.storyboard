@@ -99,6 +99,15 @@
                                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="X3h-3F-zDr"/>
                                                 </connections>
                                             </searchBar>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-JK-lbf">
+                                                <rect key="frame" x="159" y="244" width="75" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                <connections>
+                                                    <action selector="buttonEx:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="prj-8N-Xyy"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -144,26 +153,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KRd-Bz-zE8"/>
+                    <connections>
+                        <outlet property="searchBarTrip" destination="exP-Lz-rdm" id="aqi-Lc-wUN"/>
+                        <segue destination="89j-gl-CnG" kind="show" identifier="mapsSegue" id="ZdL-eM-Gwa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
-        <!--View Controller-->
+        <!--Maps View Controller-->
         <scene sceneID="Ogw-bM-kKZ">
             <objects>
-                <viewController id="89j-gl-CnG" sceneMemberID="viewController">
+                <viewController id="89j-gl-CnG" customClass="mapsViewController" customModule="uberApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FFR-rn-6h0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-OH-YeU">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWD-1I-jhJ">
-                                <rect key="frame" x="0.0" y="519" width="393" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWD-1I-jhJ">
+                                <rect key="frame" x="0.0" y="437" width="393" height="405"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuc Xpress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luA-2y-pRS">
                                         <rect key="frame" x="26" y="87" width="112" height="27"/>
@@ -235,21 +247,29 @@
                         <viewLayoutGuide key="safeArea" id="6TS-mr-PQg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6TS-mr-PQg" firstAttribute="bottom" secondItem="zWD-1I-jhJ" secondAttribute="bottom" id="4jT-NN-rQG"/>
+                            <constraint firstItem="zWD-1I-jhJ" firstAttribute="trailing" secondItem="6TS-mr-PQg" secondAttribute="trailing" id="94l-uN-LpN"/>
                             <constraint firstItem="7Wm-OH-YeU" firstAttribute="top" secondItem="6TS-mr-PQg" secondAttribute="top" id="G0y-Fz-SNX"/>
+                            <constraint firstItem="zWD-1I-jhJ" firstAttribute="leading" secondItem="6TS-mr-PQg" secondAttribute="leading" id="Puo-9s-sGr"/>
                             <constraint firstItem="6TS-mr-PQg" firstAttribute="trailing" secondItem="7Wm-OH-YeU" secondAttribute="trailing" id="YVL-qW-HPb"/>
                             <constraint firstItem="6TS-mr-PQg" firstAttribute="bottom" secondItem="7Wm-OH-YeU" secondAttribute="bottom" id="bfb-lI-Lr6"/>
                             <constraint firstItem="7Wm-OH-YeU" firstAttribute="leading" secondItem="6TS-mr-PQg" secondAttribute="leading" id="gGK-Pk-JXu"/>
+                            <constraint firstItem="zWD-1I-jhJ" firstAttribute="top" secondItem="6TS-mr-PQg" secondAttribute="top" constant="437" id="p1f-hM-bEb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lxL-my-Jrr"/>
+                    <connections>
+                        <outlet property="mapView" destination="7Wm-OH-YeU" id="nxG-ad-K0e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoM-PO-Fqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="884.73282442748086" y="-35.211267605633807"/>
         </scene>
-        <!--View Controller-->
+        <!--Options View Controller-->
         <scene sceneID="wbQ-rI-Qk5">
             <objects>
-                <viewController id="gdl-kc-Wag" sceneMemberID="viewController">
+                <viewController id="gdl-kc-Wag" customClass="optionsViewController" customModule="uberApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="law-qb-MJu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
