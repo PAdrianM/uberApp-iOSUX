@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CA412AD32C6ACB1100465D97 /* registerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA412AD22C6ACB1100465D97 /* registerController.swift */; };
+		CA6E1D192C7412BC0029E786 /* verificationCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E1D182C7412BC0029E786 /* verificationCodeController.swift */; };
+		CA6E1D1B2C7412ED0029E786 /* newPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E1D1A2C7412ED0029E786 /* newPasswordController.swift */; };
 		CA95683E2C6AC57A00B664E0 /* forgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */; };
 		CA9568402C6AC5D900B664E0 /* logInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA95683F2C6AC5D900B664E0 /* logInController.swift */; };
 		CAA0C2F72C65BD2C00188707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C2F62C65BD2C00188707 /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		CA412AD22C6ACB1100465D97 /* registerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerController.swift; sourceTree = "<group>"; };
+		CA6E1D182C7412BC0029E786 /* verificationCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verificationCodeController.swift; sourceTree = "<group>"; };
+		CA6E1D1A2C7412ED0029E786 /* newPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newPasswordController.swift; sourceTree = "<group>"; };
 		CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgotPasswordController.swift; sourceTree = "<group>"; };
 		CA95683F2C6AC5D900B664E0 /* logInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInController.swift; sourceTree = "<group>"; };
 		CAA0C2F32C65BD2C00188707 /* uberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +160,8 @@
 				CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */,
 				CA95683F2C6AC5D900B664E0 /* logInController.swift */,
 				CA412AD22C6ACB1100465D97 /* registerController.swift */,
+				CA6E1D182C7412BC0029E786 /* verificationCodeController.swift */,
+				CA6E1D1A2C7412ED0029E786 /* newPasswordController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,8 +301,10 @@
 				CA95683E2C6AC57A00B664E0 /* forgotPasswordController.swift in Sources */,
 				CAA0C2F72C65BD2C00188707 /* AppDelegate.swift in Sources */,
 				CAA0C2F92C65BD2C00188707 /* SceneDelegate.swift in Sources */,
+				CA6E1D192C7412BC0029E786 /* verificationCodeController.swift in Sources */,
 				CA412AD32C6ACB1100465D97 /* registerController.swift in Sources */,
 				CA9568402C6AC5D900B664E0 /* logInController.swift in Sources */,
+				CA6E1D1B2C7412ED0029E786 /* newPasswordController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
