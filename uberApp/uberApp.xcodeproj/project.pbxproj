@@ -11,13 +11,18 @@
 		CAA0C2F92C65BD2C00188707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C2F82C65BD2C00188707 /* SceneDelegate.swift */; };
 		CAA0C2FB2C65BD2C00188707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C2FA2C65BD2C00188707 /* ViewController.swift */; };
 		CAA0C2FE2C65BD2C00188707 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAA0C2FD2C65BD2C00188707 /* Base */; };
-		CAA0C3002C65BD2D00188707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA0C2FF2C65BD2D00188707 /* Assets.xcassets */; };
 		CAA0C3032C65BD2D00188707 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CAA0C3022C65BD2D00188707 /* Base */; };
 		CAA0C30E2C65BD2D00188707 /* uberAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C30D2C65BD2D00188707 /* uberAppTests.swift */; };
 		CAA0C3182C65BD2D00188707 /* uberAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C3172C65BD2D00188707 /* uberAppUITests.swift */; };
 		CAA0C31A2C65BD2D00188707 /* uberAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0C3192C65BD2D00188707 /* uberAppUITestsLaunchTests.swift */; };
+		E650583D2C7CF88100D89D5B /* CuentaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E650583B2C7CF88100D89D5B /* CuentaTableViewCell.swift */; };
+		E650583E2C7CF88100D89D5B /* CuentaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E650583C2C7CF88100D89D5B /* CuentaTableViewCell.xib */; };
 		E67087772C74F5C90015E321 /* mapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67087762C74F5C90015E321 /* mapsViewController.swift */; };
 		E67087792C74F60F0015E321 /* optionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67087782C74F60F0015E321 /* optionsViewController.swift */; };
+		E670877B2C75563D0015E321 /* actividadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670877A2C75563D0015E321 /* actividadViewController.swift */; };
+		E670877D2C7556540015E321 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670877C2C7556540015E321 /* profileViewController.swift */; };
+		E68C1D622C77C50C008D48C3 /* activityCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68C1D612C77C50C008D48C3 /* activityCardTableViewCell.xib */; };
+		E68C1D632C77C50C008D48C3 /* activityCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68C1D602C77C50C008D48C3 /* activityCardTableViewCell.swift */; };
 		E6CEA3942C6AE8CD0053A1D6 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CEA3932C6AE8CD0053A1D6 /* Dashboard.storyboard */; };
 		E6CEA3962C6AE8FC0053A1D6 /* dashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CEA3952C6AE8FC0053A1D6 /* dashboardViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +50,6 @@
 		CAA0C2F82C65BD2C00188707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CAA0C2FA2C65BD2C00188707 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAA0C2FD2C65BD2C00188707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CAA0C2FF2C65BD2D00188707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAA0C3022C65BD2D00188707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAA0C3042C65BD2D00188707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAA0C3092C65BD2D00188707 /* uberAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uberAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +57,15 @@
 		CAA0C3132C65BD2D00188707 /* uberAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uberAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA0C3172C65BD2D00188707 /* uberAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uberAppUITests.swift; sourceTree = "<group>"; };
 		CAA0C3192C65BD2D00188707 /* uberAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uberAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E61DF9452C7A9138009918D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E650583B2C7CF88100D89D5B /* CuentaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentaTableViewCell.swift; sourceTree = "<group>"; };
+		E650583C2C7CF88100D89D5B /* CuentaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuentaTableViewCell.xib; sourceTree = "<group>"; };
 		E67087762C74F5C90015E321 /* mapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapsViewController.swift; sourceTree = "<group>"; };
 		E67087782C74F60F0015E321 /* optionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionsViewController.swift; sourceTree = "<group>"; };
+		E670877A2C75563D0015E321 /* actividadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actividadViewController.swift; sourceTree = "<group>"; };
+		E670877C2C7556540015E321 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		E68C1D602C77C50C008D48C3 /* activityCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityCardTableViewCell.swift; sourceTree = "<group>"; };
+		E68C1D612C77C50C008D48C3 /* activityCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = activityCardTableViewCell.xib; sourceTree = "<group>"; };
 		E6CEA3932C6AE8CD0053A1D6 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		E6CEA3952C6AE8FC0053A1D6 /* dashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +123,8 @@
 				CAA0C3272C65BD4400188707 /* Model */,
 				CAA0C3262C65BD3C00188707 /* View */,
 				CAA0C3282C65BD6E00188707 /* Controller */,
-				CAA0C2FF2C65BD2D00188707 /* Assets.xcassets */,
 				CAA0C3042C65BD2D00188707 /* Info.plist */,
+				E61DF9452C7A9138009918D0 /* Assets.xcassets */,
 			);
 			path = uberApp;
 			sourceTree = "<group>";
@@ -159,6 +170,12 @@
 				E6CEA3952C6AE8FC0053A1D6 /* dashboardViewController.swift */,
 				E67087762C74F5C90015E321 /* mapsViewController.swift */,
 				E67087782C74F60F0015E321 /* optionsViewController.swift */,
+				E670877A2C75563D0015E321 /* actividadViewController.swift */,
+				E670877C2C7556540015E321 /* profileViewController.swift */,
+				E68C1D602C77C50C008D48C3 /* activityCardTableViewCell.swift */,
+				E68C1D612C77C50C008D48C3 /* activityCardTableViewCell.xib */,
+				E650583B2C7CF88100D89D5B /* CuentaTableViewCell.swift */,
+				E650583C2C7CF88100D89D5B /* CuentaTableViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,10 +284,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA0C3002C65BD2D00188707 /* Assets.xcassets in Resources */,
 				CAA0C3032C65BD2D00188707 /* Base in Resources */,
+				E650583E2C7CF88100D89D5B /* CuentaTableViewCell.xib in Resources */,
 				CAA0C2FE2C65BD2C00188707 /* Base in Resources */,
 				E6CEA3942C6AE8CD0053A1D6 /* Dashboard.storyboard in Resources */,
+				E68C1D622C77C50C008D48C3 /* activityCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +317,11 @@
 				CAA0C2F72C65BD2C00188707 /* AppDelegate.swift in Sources */,
 				CAA0C2F92C65BD2C00188707 /* SceneDelegate.swift in Sources */,
 				E67087772C74F5C90015E321 /* mapsViewController.swift in Sources */,
+				E68C1D632C77C50C008D48C3 /* activityCardTableViewCell.swift in Sources */,
+				E650583D2C7CF88100D89D5B /* CuentaTableViewCell.swift in Sources */,
 				E6CEA3962C6AE8FC0053A1D6 /* dashboardViewController.swift in Sources */,
+				E670877B2C75563D0015E321 /* actividadViewController.swift in Sources */,
+				E670877D2C7556540015E321 /* profileViewController.swift in Sources */,
 				E67087792C74F60F0015E321 /* optionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +511,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -516,6 +539,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

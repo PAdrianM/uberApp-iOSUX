@@ -7,43 +7,40 @@
 
 import UIKit
 
-class dashboardViewController: UIViewController, UISearchBarDelegate {
+class dashboardViewController: UIViewController, UISearchBarDelegate, UITabBarDelegate {
 
-    @IBOutlet weak var searchBarTrip: UISearchBar!
+    
+    @IBOutlet weak var searchBarPlace: UISearchBar!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        searchBarTrip.delegate = self
-        searchBarTrip.isUserInteractionEnabled = true
-        //searchBarTrip.becomeFirstResponder()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-        DispatchQueue.main.async {
-            self.searchBarTrip.becomeFirstResponder()
-        }
+        searchBarPlace.delegate = self
         
     }
+    
     
     @IBAction func buttonEx(_ sender: UIButton) {
         performSegue(withIdentifier: "mapsSegue", sender: "Hola")
     }
     
-    func searchBarButtonClicked(_ searchBar: UISearchBar) {
-        guard let query = searchBar.text, !query.isEmpty else {return}
-        performSegue(withIdentifier: "mapsSegue", sender: query)
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBarPlace.resignFirstResponder()
+        performSegue(withIdentifier: "mapsSegue", sender: self)
     }
+    
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mapsSegue" {
-            if let mapsVC = segue.destination as? mapsViewController, let searchQuery = sender as? String {
-                mapsVC.searchQuery = searchQuery
-            }
+             let mapsVC = segue.destination as! mapsViewController
+            mapsVC.searchQuery = searchBarPlace.text
+            
         }
     }
+    
+    
 
 }
