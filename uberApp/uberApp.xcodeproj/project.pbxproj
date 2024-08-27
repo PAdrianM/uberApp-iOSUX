@@ -86,6 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA653C622C7D2E1000741C09 /* logIn_signUp */ = {
+			isa = PBXGroup;
+			children = (
+				CAA0C2FA2C65BD2C00188707 /* ViewController.swift */,
+				CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */,
+				CA95683F2C6AC5D900B664E0 /* logInController.swift */,
+				CA412AD22C6ACB1100465D97 /* registerController.swift */,
+				CA6E1D182C7412BC0029E786 /* verificationCodeController.swift */,
+				CA6E1D1A2C7412ED0029E786 /* newPasswordController.swift */,
+			);
+			path = logIn_signUp;
+			sourceTree = "<group>";
+		};
 		CAA0C2EA2C65BD2C00188707 = {
 			isa = PBXGroup;
 			children = (
@@ -156,12 +169,7 @@
 		CAA0C3282C65BD6E00188707 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CAA0C2FA2C65BD2C00188707 /* ViewController.swift */,
-				CA95683D2C6AC57A00B664E0 /* forgotPasswordController.swift */,
-				CA95683F2C6AC5D900B664E0 /* logInController.swift */,
-				CA412AD22C6ACB1100465D97 /* registerController.swift */,
-				CA6E1D182C7412BC0029E786 /* verificationCodeController.swift */,
-				CA6E1D1A2C7412ED0029E786 /* newPasswordController.swift */,
+				CA653C622C7D2E1000741C09 /* logIn_signUp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
