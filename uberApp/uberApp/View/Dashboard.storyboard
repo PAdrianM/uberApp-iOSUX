@@ -519,6 +519,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="MI CUENTA" image="person.circle" catalog="system" id="r9c-1G-BOl"/>
+                    <connections>
+                        <outlet property="optionsCuenta" destination="d3y-7E-cAY" id="n2Z-a3-HgR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkp-Gp-EXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,12 @@ import UIKit
 
 class CuentaTableViewCell: UITableViewCell {
     
-
+    @IBOutlet weak var opcionPerfilCard: UIStackView!
+    
+    @IBOutlet weak var logoOption: UIImageView!
+    
+    @IBOutlet weak var textOption: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

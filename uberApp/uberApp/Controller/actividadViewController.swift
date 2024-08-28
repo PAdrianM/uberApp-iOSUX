@@ -42,9 +42,6 @@ class actividadViewController: UIViewController, UITableViewDelegate, UITableVie
         print("Seleccionada: \(indexPath)")
     }
     
-    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-    }*/
     
 
 }
