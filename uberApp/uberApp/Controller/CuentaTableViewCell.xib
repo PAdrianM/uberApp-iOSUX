@@ -5,70 +5,71 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="perfilOpcionCell" rowHeight="45" id="KGk-i7-Jjw" customClass="CuentaTableViewCell" customModule="uberApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="perfilOpcionCell" rowHeight="70" id="KGk-i7-Jjw" customClass="CuentaTableViewCell" customModule="uberApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="70"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
+                <rect key="frame" x="0.0" y="0.0" width="353" height="70"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpW-0o-nor">
-                        <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pT-lW-Ke8">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="70"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay" translatesAutoresizingMaskIntoConstraints="NO" id="SSL-JG-7Vj">
-                                <rect key="frame" x="0.0" y="5" width="55" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="7td-Vp-pTs"/>
-                                    <constraint firstAttribute="height" constant="35" id="PuA-Tb-VPe"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metodo de pago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBl-mM-9rs">
-                                <rect key="frame" x="55" y="5" width="243" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVE-Sa-UCj">
+                                <rect key="frame" x="80" y="25" width="210" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hYZ-MG-TUO">
-                                <rect key="frame" x="298" y="8.6666666666666679" width="55" height="28.333333333333332"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mN9-SD-6e4">
+                                <rect key="frame" x="298" y="16" width="55" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.72171968220000005" green="0.22502142189999999" blue="0.29263088110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="8z7-KI-h3O"/>
-                                    <constraint firstAttribute="width" constant="55" id="oKx-vj-Xgh"/>
-                                </constraints>
                                 <imageReference key="image" image="chevron.right" catalog="system" symbolScale="small"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay" translatesAutoresizingMaskIntoConstraints="NO" id="ulq-ln-Zmr">
+                                <rect key="frame" x="8" y="8" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="0r7-Y1-Rl3"/>
+                                    <constraint firstAttribute="height" constant="55" id="wDn-Pu-xUx"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hYZ-MG-TUO" firstAttribute="top" secondItem="YpW-0o-nor" secondAttribute="top" constant="5" id="Ktg-9i-Q9A"/>
-                            <constraint firstItem="SSL-JG-7Vj" firstAttribute="leading" secondItem="YpW-0o-nor" secondAttribute="leading" id="NMo-Xy-2C7"/>
-                            <constraint firstItem="SSL-JG-7Vj" firstAttribute="top" secondItem="YpW-0o-nor" secondAttribute="top" constant="5" id="YXF-wR-KVl"/>
-                            <constraint firstItem="hYZ-MG-TUO" firstAttribute="leading" secondItem="TBl-mM-9rs" secondAttribute="trailing" id="byt-4G-hRH"/>
+                            <constraint firstItem="ulq-ln-Zmr" firstAttribute="top" secondItem="8pT-lW-Ke8" secondAttribute="top" constant="8" id="Tjv-rE-Ayz"/>
+                            <constraint firstItem="ulq-ln-Zmr" firstAttribute="leading" secondItem="8pT-lW-Ke8" secondAttribute="leading" constant="8" id="XMw-mX-KFs"/>
                         </constraints>
-                    </stackView>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="YpW-0o-nor" secondAttribute="trailing" id="MfQ-b1-v75"/>
-                    <constraint firstAttribute="bottom" secondItem="YpW-0o-nor" secondAttribute="bottom" id="UMs-cg-mhS"/>
-                    <constraint firstItem="YpW-0o-nor" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ys1-RV-44E"/>
-                    <constraint firstItem="YpW-0o-nor" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a5s-bp-2ge"/>
+                    <constraint firstItem="8pT-lW-Ke8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BS7-k1-yyv"/>
+                    <constraint firstAttribute="bottom" secondItem="8pT-lW-Ke8" secondAttribute="bottom" id="U65-uA-9uz"/>
+                    <constraint firstItem="8pT-lW-Ke8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="X6C-eq-VpG"/>
+                    <constraint firstAttribute="trailing" secondItem="8pT-lW-Ke8" secondAttribute="trailing" id="XNt-NX-XEw"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="logoOption" destination="SSL-JG-7Vj" id="6mc-aO-4eY"/>
-                <outlet property="opcionPerfilCard" destination="YpW-0o-nor" id="gk2-tZ-aMI"/>
-                <outlet property="textOption" destination="TBl-mM-9rs" id="ehh-Kt-aMK"/>
+                <outlet property="imageOptionCuenta" destination="ulq-ln-Zmr" id="BAR-MS-dAe"/>
+                <outlet property="optionBoton" destination="mN9-SD-6e4" id="OPg-PM-zeP"/>
+                <outlet property="optionName" destination="EVE-Sa-UCj" id="HFV-1F-Ukx"/>
             </connections>
-            <point key="canvasLocation" x="156.4885496183206" y="-10.91549295774648"/>
+            <point key="canvasLocation" x="156.4885496183206" y="-2.1126760563380285"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="pay" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

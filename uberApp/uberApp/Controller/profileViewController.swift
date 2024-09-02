@@ -11,29 +11,35 @@ class profileViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     @IBOutlet weak var optionsCuenta: UITableView!
     
+    @IBOutlet weak var userImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userImage.layer.cornerRadius = 90
         optionsCuenta.dataSource = self
         optionsCuenta.delegate = self
         optionsCuenta.register(UINib(nibName: "CuentaTableViewCell", bundle: nil), forCellReuseIdentifier: "perfilOpcionCell")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       6
+       2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellOptionProfile = optionsCuenta.dequeueReusableCell(withIdentifier: "perfilOpcionCell", for: indexPath) as! CuentaTableViewCell
         
-        cellOptionProfile.textOption.text = "Metodo de pago"
-        
+        cellOptionProfile.optionName.text = "Metodo de pago"
         
         return cellOptionProfile
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Seleccionada: \(indexPath)")
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
     }
     
 

@@ -21,6 +21,7 @@
 		E67087792C74F60F0015E321 /* optionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67087782C74F60F0015E321 /* optionsViewController.swift */; };
 		E670877B2C75563D0015E321 /* actividadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670877A2C75563D0015E321 /* actividadViewController.swift */; };
 		E670877D2C7556540015E321 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670877C2C7556540015E321 /* profileViewController.swift */; };
+		E68AC5162C827B58005B687B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68AC5152C827B58005B687B /* Assets.xcassets */; };
 		E68C1D622C77C50C008D48C3 /* activityCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68C1D612C77C50C008D48C3 /* activityCardTableViewCell.xib */; };
 		E68C1D632C77C50C008D48C3 /* activityCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68C1D602C77C50C008D48C3 /* activityCardTableViewCell.swift */; };
 		E6CEA3942C6AE8CD0053A1D6 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6CEA3932C6AE8CD0053A1D6 /* Dashboard.storyboard */; };
@@ -57,13 +58,13 @@
 		CAA0C3132C65BD2D00188707 /* uberAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uberAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA0C3172C65BD2D00188707 /* uberAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uberAppUITests.swift; sourceTree = "<group>"; };
 		CAA0C3192C65BD2D00188707 /* uberAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uberAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E61DF9452C7A9138009918D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E650583B2C7CF88100D89D5B /* CuentaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuentaTableViewCell.swift; sourceTree = "<group>"; };
 		E650583C2C7CF88100D89D5B /* CuentaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuentaTableViewCell.xib; sourceTree = "<group>"; };
 		E67087762C74F5C90015E321 /* mapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapsViewController.swift; sourceTree = "<group>"; };
 		E67087782C74F60F0015E321 /* optionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionsViewController.swift; sourceTree = "<group>"; };
 		E670877A2C75563D0015E321 /* actividadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = actividadViewController.swift; sourceTree = "<group>"; };
 		E670877C2C7556540015E321 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		E68AC5152C827B58005B687B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E68C1D602C77C50C008D48C3 /* activityCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activityCardTableViewCell.swift; sourceTree = "<group>"; };
 		E68C1D612C77C50C008D48C3 /* activityCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = activityCardTableViewCell.xib; sourceTree = "<group>"; };
 		E6CEA3932C6AE8CD0053A1D6 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
@@ -124,7 +125,7 @@
 				CAA0C3262C65BD3C00188707 /* View */,
 				CAA0C3282C65BD6E00188707 /* Controller */,
 				CAA0C3042C65BD2D00188707 /* Info.plist */,
-				E61DF9452C7A9138009918D0 /* Assets.xcassets */,
+				E68AC5152C827B58005B687B /* Assets.xcassets */,
 			);
 			path = uberApp;
 			sourceTree = "<group>";
@@ -288,6 +289,7 @@
 				E650583E2C7CF88100D89D5B /* CuentaTableViewCell.xib in Resources */,
 				CAA0C2FE2C65BD2C00188707 /* Base in Resources */,
 				E6CEA3942C6AE8CD0053A1D6 /* Dashboard.storyboard in Resources */,
+				E68AC5162C827B58005B687B /* Assets.xcassets in Resources */,
 				E68C1D622C77C50C008D48C3 /* activityCardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

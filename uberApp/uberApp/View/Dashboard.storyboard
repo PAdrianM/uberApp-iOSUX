@@ -250,7 +250,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Realizar actvidades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHz-mf-K7a">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Realizar actividades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHz-mf-K7a">
                                         <rect key="frame" x="20" y="430" width="353" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="2uX-W1-vqy"/>
@@ -478,34 +478,45 @@
                                             <constraint firstItem="eV6-a5-hFB" firstAttribute="top" secondItem="Sjr-Dh-vWC" secondAttribute="top" id="rno-xp-vPN"/>
                                         </constraints>
                                     </scrollView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="fpi-U0-O0W">
-                                        <rect key="frame" x="106" y="19" width="180" height="180"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qx3-On-whx">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="302"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Carlos Ruiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdt-FS-V7d">
+                                                <rect key="frame" x="20" y="216" width="353" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="333" id="RCs-vu-e2h"/>
+                                                    <constraint firstAttribute="height" constant="40" id="i0D-y4-1Vb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="dbW-9f-SRf">
+                                                <rect key="frame" x="106" y="25" width="180" height="180"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="180" id="c9Y-2q-sTG"/>
+                                                    <constraint firstAttribute="height" constant="180" id="yya-ZJ-NO9"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.72171968220000005" green="0.22502142189999999" blue="0.29263088110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="180" id="eCL-LR-j5f"/>
-                                            <constraint firstAttribute="height" constant="180" id="g2h-JE-Mw6"/>
+                                            <constraint firstItem="dbW-9f-SRf" firstAttribute="top" secondItem="qx3-On-whx" secondAttribute="top" constant="25" id="0Uh-CX-ekW"/>
+                                            <constraint firstAttribute="width" constant="393" id="N0x-wb-VvD"/>
+                                            <constraint firstAttribute="height" constant="302" id="dmj-8d-h6H"/>
+                                            <constraint firstItem="dbW-9f-SRf" firstAttribute="leading" secondItem="qx3-On-whx" secondAttribute="leading" constant="106" id="oi6-S9-NLo"/>
                                         </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carlos Ruiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdt-FS-V7d">
-                                        <rect key="frame" x="30" y="234" width="333" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="333" id="RCs-vu-e2h"/>
-                                            <constraint firstAttribute="height" constant="40" id="i0D-y4-1Vb"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.72171968220000005" green="0.22502142189999999" blue="0.29263088110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="qx3-On-whx" firstAttribute="top" secondItem="fHo-qt-244" secondAttribute="top" id="1S6-ZQ-vhQ"/>
                                     <constraint firstAttribute="bottom" secondItem="Sjr-Dh-vWC" secondAttribute="bottom" id="AVv-FK-eH0"/>
-                                    <constraint firstItem="fpi-U0-O0W" firstAttribute="leading" secondItem="fHo-qt-244" secondAttribute="leading" constant="106" id="BNc-eF-syu"/>
                                     <constraint firstItem="Sjr-Dh-vWC" firstAttribute="leading" secondItem="fHo-qt-244" secondAttribute="leading" id="FkP-Hs-l7c"/>
                                     <constraint firstAttribute="trailing" secondItem="Sjr-Dh-vWC" secondAttribute="trailing" id="ZPN-y8-qdZ"/>
-                                    <constraint firstItem="fpi-U0-O0W" firstAttribute="top" secondItem="fHo-qt-244" secondAttribute="top" constant="19" id="e8A-T4-eHb"/>
-                                    <constraint firstItem="wdt-FS-V7d" firstAttribute="leading" secondItem="fHo-qt-244" secondAttribute="leading" constant="30" id="f3r-tO-6vk"/>
                                     <constraint firstItem="Sjr-Dh-vWC" firstAttribute="top" secondItem="fHo-qt-244" secondAttribute="top" constant="300" id="sGl-IF-me6"/>
-                                    <constraint firstItem="wdt-FS-V7d" firstAttribute="top" secondItem="fpi-U0-O0W" secondAttribute="bottom" constant="35" id="uYo-Ly-hHu"/>
+                                    <constraint firstItem="qx3-On-whx" firstAttribute="leading" secondItem="fHo-qt-244" secondAttribute="leading" id="urC-g5-UZ7"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -521,6 +532,7 @@
                     <tabBarItem key="tabBarItem" tag="3" title="MI CUENTA" image="person.circle" catalog="system" id="r9c-1G-BOl"/>
                     <connections>
                         <outlet property="optionsCuenta" destination="d3y-7E-cAY" id="n2Z-a3-HgR"/>
+                        <outlet property="userImage" destination="dbW-9f-SRf" id="D6C-l6-NHo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lkp-Gp-EXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -549,7 +561,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car.side.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jfB-Kj-0mZ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tuktuk" translatesAutoresizingMaskIntoConstraints="NO" id="jfB-Kj-0mZ">
                                         <rect key="frame" x="127" y="10.333333333333329" width="139" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.72171968220000005" green="0.22502142189999999" blue="0.29263088110000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -639,7 +651,6 @@
         <image name="car" catalog="system" width="128" height="95"/>
         <image name="car.front.waves.up" catalog="system" width="118" height="128"/>
         <image name="car.side" catalog="system" width="128" height="59"/>
-        <image name="car.side.fill" catalog="system" width="128" height="58"/>
         <image name="cloud" catalog="system" width="128" height="87"/>
         <image name="concert" width="816" height="1056"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="123"/>
@@ -651,6 +662,7 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="shippingbox" catalog="system" width="128" height="123"/>
         <image name="suitcase.cart.fill" catalog="system" width="128" height="122"/>
+        <image name="tuktuk" width="201" height="117"/>
         <image name="user" width="5315" height="5315"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

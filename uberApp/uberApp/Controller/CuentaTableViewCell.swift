@@ -9,11 +9,12 @@ import UIKit
 
 class CuentaTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var opcionPerfilCard: UIStackView!
     
-    @IBOutlet weak var logoOption: UIImageView!
+    @IBOutlet weak var imageOptionCuenta: UIImageView!
+
+    @IBOutlet weak var optionName: UILabel!
     
-    @IBOutlet weak var textOption: UILabel!
+    @IBOutlet weak var optionBoton: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
